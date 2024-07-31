@@ -1,0 +1,18 @@
+:root{
+    --primary-color: #D1241F;
+    --secundary-color: #1d1d1b;
+    --tertiary-color: #8A8D8F;
+    --bg-color: #ffffff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    
+}
