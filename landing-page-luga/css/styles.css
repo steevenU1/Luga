@@ -24,14 +24,30 @@ html{
 }
 
 nav{
+    display: flex;
     width: 100%;
     min-width: 320px;
     height: 60px;
+    
+    
 }
+
+.nav-logo{
+    width: 50%;
+    height: 60px;
+}
+
+.nav-logo img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
 .up-main{
     display: flex;
     width: 100%;
-    height: 400px;
+    height: auto;
     min-width: 320px;
 }
 
@@ -42,7 +58,7 @@ nav{
     height: auto;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
 }
 
 .up-main--title img{
@@ -90,7 +106,7 @@ nav{
     display: flex;
     background-color: var(--secundary-color);
     width: 100%;
-    height: 600px;
+    height: auto;
 
 }
 
@@ -116,14 +132,14 @@ nav{
     display: flex;
     width: 50%;
     height: auto;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 
 }
 
 .credit-section-img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 
 }
 
@@ -143,6 +159,73 @@ nav{
     color: var(--bg-color);
 
 }
+
+.documents-section{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    
+    background-color: var(--primary-color);
+}
+
+.documents-card--container{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.documents-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 500px;
+    height: 250px;
+    background-color: var(--secundary-color);
+    border: none;
+    border-radius: 20px;
+    margin: 30px 15px;
+    box-shadow: 6px 7px 20px -6px rgba(0,0,0,0.75);
+
+}
+
+.documents-card .main-card-title{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.documents-card h3{
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: 800;
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+}
+
+.documents-card p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--bg-color);
+    
+    padding: 0 30px;
+
+}
+.documents-card svg{
+    position: absolute;
+    top: -30px;
+}
+
+
+
+
+
+
 
 .aliance-section{
     display: flex;
@@ -209,4 +292,44 @@ nav{
 .providers-card-container div{
     margin: 20px;
     justify-content: center;
+}
+
+@media (max-width:930px){
+    .credit-section{
+        flex-direction: column;
+    }
+
+    .credit-section--title{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .credit-section-img{
+        width: 100%;
+        height: 280px;
+        justify-content: flex-end;
+    }
+    .credit-section-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom;
+    }
+
+    .grid-img--cero{
+        display: none;
+    }
+
+    .down-main{
+        
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .up-main--title{
+        width: 50%;
+    }
+
+    .grid-right-img{
+        width: 50%;
 }
