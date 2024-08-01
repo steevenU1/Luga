@@ -6,6 +6,12 @@
 
 }
 
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/circular-std-medium-500.ttf');
+    
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -15,4 +21,65 @@
 html{
     font-size: 62.5%;
     
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+}
+.up-main{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.up-main--title{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.up-main--title img{
+    width: auto;
+    height: 250px;
+}
+
+
+.up-main--title h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Circular', sans-serif;
+}
+
+.grid-right-img{
+    width: 40%;
+    height: 400px;
+}
+
+.grid-right-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.down-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.grid-img{
+    width: 100%;
+    height: 300px;
+    
+}
+
+.grid-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
