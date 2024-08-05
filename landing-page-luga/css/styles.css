@@ -256,7 +256,7 @@ nav{
     display: flex;
     flex-direction: column;
     width: 250px;
-    height: auto;
+    height: 400px;
     justify-content: center;
     align-items: center;
     padding: 15px;
