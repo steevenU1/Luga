@@ -284,15 +284,18 @@ nav{
 }
 
 .store-card--img{
-    width: 230px;
+    width: 180px;
     height: 115px;
     margin-bottom: 20px;
+    border-radius: 8px;
+    
 }
 
 .store-card--img img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .map-button, .dial-button{
@@ -388,7 +391,7 @@ nav{
 
     .up-main--title h1{
         font-size: 1.5rem;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .credit-section{
@@ -398,6 +401,10 @@ nav{
     .credit-section--title{
         width: 100%;
         padding: 10px;
+    }
+
+    .credit-section--title h2{
+        margin-top: 20px;
     }
 
     .credit-section-img{
