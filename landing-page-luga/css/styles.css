@@ -27,7 +27,20 @@ nav{
     display: flex;
     width: 100%;
     min-width: 320px;
-    height: 60px;
+    height: 50px;
+    background-image: linear-gradient(
+  120deg,
+  hsl(2deg 74% 47%) 59%,
+  hsl(6deg 70% 54%) 86%,
+  hsl(8deg 74% 60%) 94%,
+  hsl(9deg 78% 66%) 97%,
+  hsl(10deg 83% 72%) 99%,
+  hsl(10deg 89% 78%) 100%,
+  hsl(10deg 94% 84%) 101%,
+  hsl(10deg 100% 89%) 101%,
+  hsl(11deg 100% 95%) 100%,
+  hsl(0deg 0% 100%) 100%
+);
     
     
 }
@@ -153,6 +166,12 @@ nav{
     box-shadow: 7px 6px 12px -3px rgba(0,0,0,0.75);
 }
 
+.contact-button:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgb(68, 68, 68);
+    transition: all 0.2s ease;
+  }
+
 .contact-button--link{
     text-decoration: none;
     font-size: 2rem;
@@ -277,10 +296,14 @@ nav{
 
 
 .store-card p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 2rem;
-    margin-bottom: 20px;
+    align-self: baseline;
+    width: 180px;
+    height: 60px;
+    padding: 5px;
+    /* margin-bottom: 20px; */
 }
 
 .store-card--img{
@@ -306,7 +329,7 @@ nav{
     box-shadow: 7px 6px 12px -3px rgba(0,0,0,0.75);
     background-color: var(--secundary-color);
     justify-self: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .map-button a, .dial-button a{
@@ -314,6 +337,13 @@ nav{
     color: var(--bg-color);
     font-weight: 600;
 }
+
+.map-button:hover, .dial-button:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgb(154, 99, 99);
+    transition: all 0.2s ease;
+}
+
 
 
 .aliance-section{
