@@ -118,7 +118,8 @@ nav{
 
 .credit-section{
     display: flex;
-    background-color: var(--secundary-color);
+    /* background-color: var(--secundary-color); */
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     width: 100%;
     height: auto;
 
@@ -239,7 +240,7 @@ nav{
 }
 
 .documents-card h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--bg-color);
     font-weight: 800;
     margin-bottom: 20px;
@@ -248,7 +249,7 @@ nav{
 }
 
 .documents-card p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2.5rem;
     color: var(--bg-color);
     
@@ -488,5 +489,16 @@ nav{
 
     .store-card--container::-webkit-scrollbar{
         display: none;
+    }
+
+    /*MAnejando estilos para tablet y movil*/
+
+    .documents-card{
+        width: 250px;
+    }
+
+    .documents-card .main-card-title{
+        font-size: 2rem;
+        font-weight: 800;
     }
 }
