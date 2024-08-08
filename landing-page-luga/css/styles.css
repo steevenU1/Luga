@@ -235,16 +235,16 @@ nav{
 }
 
 .documents-card .main-card-title{
-    font-size: 3.5rem;
+    font-size: 4.5rem; /*cambie tamaño despues de ajustar cards*/
     font-weight: 800;
 }
 
 .documents-card h3{
-    font-size: 2.5rem;
+    font-size: 2.5rem; 
     color: var(--bg-color);
     font-weight: 800;
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0 10px;
 
 }
 
