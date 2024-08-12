@@ -168,23 +168,7 @@ nav{
     position: relative;
 }
 
-.contact-button:before {
-    content:"";
-    border-radius: 15px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0px;
-    height: 100%;
-    background: rgba(177, 177, 177, 0.1);
-    transition: all 1s ease;
-    
-}
 
-.contact-button:hover:before {
-  width: 100%;
-  border-radius: 12px;
-}
 
 .contact-button:hover {
     color: rgba(255, 255, 255, 1) !important;
