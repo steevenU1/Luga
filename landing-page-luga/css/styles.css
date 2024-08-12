@@ -186,11 +186,11 @@ nav{
   border-radius: 12px;
 }
 
-/* .contact-button:hover {
+.contact-button:hover {
     color: rgba(255, 255, 255, 1) !important;
     box-shadow: 0 4px 16px rgb(68, 68, 68);
     transition: all 0.2s ease;
-} */
+}
 
 .contact-button--link{
     text-decoration: none;
@@ -490,10 +490,6 @@ nav{
     .store-card--container::-webkit-scrollbar{
         display: none;
     }
-<<<<<<< HEAD
-}
-
-=======
 
     /*MAnejando estilos para tablet y movil*/
 
@@ -506,4 +502,3 @@ nav{
         font-weight: 800;
     }
 }
->>>>>>> d0b8bc998dcd5692edc0129ba6f220f2f4db00f9
