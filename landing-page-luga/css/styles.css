@@ -118,7 +118,8 @@ nav{
 
 .credit-section{
     display: flex;
-    background-color: var(--secundary-color);
+    /* background-color: var(--secundary-color); */
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     width: 100%;
     height: auto;
 
@@ -164,13 +165,32 @@ nav{
     border: none;
     border-radius: 12px;
     box-shadow: 7px 6px 12px -3px rgba(0,0,0,0.75);
+    position: relative;
 }
 
-.contact-button:hover {
+.contact-button:before {
+    content:"";
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(177, 177, 177, 0.1);
+    transition: all 1s ease;
+    
+}
+
+.contact-button:hover:before {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* .contact-button:hover {
     color: rgba(255, 255, 255, 1) !important;
     box-shadow: 0 4px 16px rgb(68, 68, 68);
     transition: all 0.2s ease;
-  }
+} */
 
 .contact-button--link{
     text-decoration: none;
@@ -215,21 +235,21 @@ nav{
 }
 
 .documents-card .main-card-title{
-    font-size: 3.5rem;
+    font-size: 4.5rem; /*cambie tamaño despues de ajustar cards*/
     font-weight: 800;
 }
 
 .documents-card h3{
-    font-size: 2rem;
+    font-size: 2.5rem; 
     color: var(--bg-color);
     font-weight: 800;
     margin-bottom: 20px;
-    padding: 0 20px;
+    padding: 0 10px;
 
 }
 
 .documents-card p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2.5rem;
     color: var(--bg-color);
     
@@ -431,6 +451,7 @@ nav{
     .credit-section--title{
         width: 100%;
         padding: 10px;
+        
     }
 
     .credit-section--title h2{
@@ -469,5 +490,20 @@ nav{
     .store-card--container::-webkit-scrollbar{
         display: none;
     }
+<<<<<<< HEAD
 }
 
+=======
+
+    /*MAnejando estilos para tablet y movil*/
+
+    .documents-card{
+        width: 250px;
+    }
+
+    .documents-card .main-card-title{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+}
+>>>>>>> d0b8bc998dcd5692edc0129ba6f220f2f4db00f9
